@@ -5,7 +5,7 @@ import HeaderPage from '@/components/HeaderPage.vue'
 </script>
 
 <template>
-    <HeaderPage />
+
     <main>
         <Suspense>
             <RouterView />

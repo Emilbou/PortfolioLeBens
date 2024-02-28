@@ -1,29 +1,11 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+import LogoHeader from './LogoHeader.vue';
 </script>
 <template>
-    <header id="header">
-        <div>
-            <div>
-                <div>
-                    <a>
-                        <img src="#" alt="Logo">
-                    </a>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <RouterLink to="/">Home</RouterLink>
-                        </li>
-                        <li>
-                            <RouterLink to="/web3">Web3</RouterLink>
-                        </li>
-                        <li>
-                            <RouterLink to="/web5">Web5</RouterLink>
-                        </li>
-                    </ul>
-            </div>
-        </div>
+    <div class="flex justify-between p-11 font-extrabold ">
+<RouterLink to="/Projets" class="font-extrabold text-4xl">Projets</RouterLink>
+<LogoHeader />
+<RouterLink to="/Contact" class="font-extrabold text-4xl">Contact</RouterLink>
     </div>
-</header>
 </template>
